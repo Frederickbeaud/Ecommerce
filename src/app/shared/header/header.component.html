@@ -1,0 +1,20 @@
+<div class="header d-flex align-items-center">
+    <a routerLink="/home">ECommShop <span>.</span></a>
+    <form #searchBox="ngForm">
+        <div class="header-search d-flex align-items-center">
+            <input type="text" class="search-box" [(ngModel)]="searchText"
+            placeholder="Search..." name="searchText">
+        </div>
+       
+    </form>
+    <button class="btn-theme ms-4">Sort</button>
+    <div class="header-right-item">
+        <div class="cart" routerLink="cart">
+            <i class="fa-solid fa-cart-arrow-down cart-image"></i>
+        </div>
+        @if (cartItemCount) {
+            <div class="cart-items">{{cartItemCount}}</div>
+        }
+        
+    </div>
+</div>

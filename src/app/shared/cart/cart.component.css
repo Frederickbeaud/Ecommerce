@@ -1,0 +1,29 @@
+.btn-theme{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: antiquewhite; 
+    background-color: orange;
+    border-color: orange;
+    outline: none;
+ }
+ .cart{
+    margin: 0 75px;
+ }
+ .empty-cart{
+    margin-top: 50px;
+ }
+ .text-large{
+    font-size: 80px;
+ }
+ .text-theme{
+    color: orange;
+ }
+ .mb-50{
+    margin-bottom: 50px;
+ }
+ .cart-empty-img{
+    color: orange;
+    
+    
+ }

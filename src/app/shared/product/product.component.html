@@ -1,0 +1,19 @@
+<div class="prod-card p-1 d-flex flex-column justify-conten-between">
+    <div class="d-flex justify-content-center">
+        <a routerLink="product-details">
+            <img [src]="prod.imageUrl" class="prod-thumbnail">
+        </a>
+    </div>
+    <div class="card-content">
+        <h4 class="text-secondary text-truncate">{{prod.name}}</h4>
+        <p class="text-secondary text-truncate">{{prod.description}}</p>
+        @if (isProductInCart) {
+            
+            <button class="btn-theme w-100" routerLink="cart">Go to cart</button>
+        }
+        @else {
+            <button class="btn-theme w-100" (click)="addToCart(prod)">Add to cart</button>
+        }
+        
+    </div>
+</div>

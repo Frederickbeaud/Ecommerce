@@ -1,0 +1,21 @@
+<div class="cart">
+    @if (!cartIteltems.length) {
+        <div class="empty-cart d-flex flex-column align-items-center">
+            <h1 class="text-large text-theme mb-50">Oops</h1>
+            <i class="cart-empty-img fa-solid fa-circle-exclamation"></i>
+            <h1 class="mt-4">No items in your cart</h1>
+            <h3>Add items to continue shopping</h3>
+            <button class="btn-theme w-25 mt-4" routerLink="">Shop Now</button>
+        </div>
+    }
+    @else {
+        <div class="cart-content d-flex justify-conten-between p-5">
+            <div class="items-container me-5">
+                @for (item of cartIteltems; track $index) {
+                    <app-cart-item [item]="item"></app-cart-item>
+                }
+            </div>
+        </div>
+    }
+    
+</div>

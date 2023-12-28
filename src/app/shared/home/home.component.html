@@ -1,0 +1,9 @@
+<div class="d-flex">
+    <app-side-panel></app-side-panel>
+    <div class="home-main row">
+        @for (prod of prods; track $index) {
+            <app-product class="col-4" [prod]="prod"></app-product>
+        }
+       
+    </div>
+</div>
